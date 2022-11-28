@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* ||VARIABLES */
+:root {
+    /* FONTS */
+    --FF:  'Lato', sans-serif;
+
+    /* COLOR */
+    --COLOR1:#272A31;
+    --COLOR2:#EC5242;
+    --COLOR3:#D3D3D3;
+}
+
+/* ||GENERAL STYLE */
+
+ .hero {
+    background-image: url("images/header\ background.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+ }
+
+ .hero_box {
+    margin-left: 20px;
+    margin-top: 50px;
+ }
+
+ .hero_heading {
+    font-family:var(--FF);
+    color:var(--COLOR2);
+    margin-bottom: 5px;
+ }
+
+ .hero_title {
+    font-family: var(--FF);
+    color:var(--COLOR2);
+ }
+
+ .hero_description {
+    margin-left: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    padding:15px;
+    background-color:rgba(202, 199, 199, 0.1);
+    font-family: var(--);
+ }
+
+ .des2 {
+    margin-left: 20px;
+    margin-bottom: 9px;
+    color: var(--COLOR1);
+ }
+
+ .des3 {
+    margin-left: 20px;
+ }
+
+ .container {
+    width:390px;
+    height:56vh;
+    background-image: url("images/mobile\ background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+
+ .hamburger_menu {
+    width:60px;
+    height:48px;
+    background: none;
+ }
+
+ .menu {
+    display: none;
+ }
