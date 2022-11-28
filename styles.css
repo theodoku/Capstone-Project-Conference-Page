@@ -10,7 +10,7 @@
   /* ||VARIABLES */
 :root {
     /* FONTS */
-    --FF:  'Lato', sans-serif;
+    --FF:  'Poppins', sans-serif;
 
     /* COLOR */
     --COLOR1:#272A31;
@@ -43,9 +43,7 @@
  }
 
  .hero_description {
-    margin-left: 20px;
-    margin-top: 90px;
-    margin-bottom: 20px;
+    margin: 90px 20px 20px 20px;
     border: 1px solid white;
     padding:15px;
     background-color:rgba(202, 199, 199, 0.1);
@@ -95,14 +93,36 @@
     list-style-type: none;
  }
 
+ .programs {
+   text-align: center;
+   padding:50px;
+   color: white;
+   position: relative;
+   /* display: inline-block; */
+   font-family: var(--FF);
+ }
+
+ .programs::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:155px;
+   bottom:30px;
+ }
+
  .python,
  .Java_Programming,
  .Redux_React,
  .Andriod_N_Developer,
  .Cyber_security{
     display: flex;
-    gap:10px;
+    gap:15px;
     justify-content: space-between;
+    background-color:rgba(202, 199, 199, 0.1);
+    margin: 0 20px 10px 20px;
+    padding: 20px;
  }
 
  .python_course,
@@ -111,6 +131,7 @@
  .AND_course,
  .CS_course {
     color: var(--COLOR2);
+    font-family: var(--FF);
  }
  
  .python_des,
@@ -120,4 +141,21 @@
  .CS_des {
     color: white;
     justify-content: flex-end;
+    font-family:var(--FF);
+ }
+ 
+ .Java_des {
+   margin-left: 30px;
+ }
+
+ .RR_des {
+   margin-left: 19px;
+ }
+
+ .python_des {
+   margin-left: 10px;
+ }
+
+ .CS_des {
+   margin-left: 10px;
  }
