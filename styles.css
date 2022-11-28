@@ -79,3 +79,45 @@
  .menu {
     display: none;
  }
+
+ .lecture_icon {
+    width:50px;
+    height:48px;
+    background-color: #D3D3D3;
+ }
+
+ .courses {
+    background-color: var(--COLOR1);
+    background-image: url("images/diamond.png");
+ }
+
+ ul {
+    list-style-type: none;
+ }
+
+ .python,
+ .Java_Programming,
+ .Redux_React,
+ .Andriod_N_Developer,
+ .Cyber_security{
+    display: flex;
+    gap:10px;
+    justify-content: space-between;
+ }
+
+ .python_course,
+ .Java_course,
+ .RR_course,
+ .AND_course,
+ .CS_course {
+    color: var(--COLOR2);
+ }
+ 
+ .python_des,
+ .Java_des,
+ .RR_des,
+ .AND_des,
+ .CS_des {
+    color: white;
+    justify-content: flex-end;
+ }
