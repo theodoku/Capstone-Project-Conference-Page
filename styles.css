@@ -36,9 +36,14 @@
  }
 
  .hero_heading {
-    font-family:var(--FF);
-    color:var(--COLOR2);
+    color: var(--COLOR2);
     margin-bottom: 5px;
+ }
+
+ .hero_headingA {
+   color: var(--COLOR2);
+   margin-bottom: 5px;
+   text-align: center;
  }
 
  .hero_title {
@@ -48,12 +53,26 @@
     -webkit-background-clip: text;
  }
 
+ .hero_titleA {
+   font-family: var(--FF);
+   color: var(--COLOR2);
+   text-align: center;
+ }
+
  .hero_description {
     margin: 70px 20px 20px 20px;
     border: 1px solid white;
     padding:15px;
     background-color:rgba(202, 199, 199, 0.1);
     /* font-family: var(--FF); */
+ }
+
+ .hero_descriptionA {
+   margin: 70px 20px 20px 20px;
+   border: 1px solid white;
+   padding:15px;
+   background-color: white;
+   text-align: center;
  }
 
  .des2 {
@@ -260,4 +279,84 @@
  .more_info:active {
    background-color: red;
    cursor: pointer;
+ }
+
+ .contact {
+   background-color: rgb(244, 244, 244);
+   height: 60vh;
+ }
+
+ .contact_orbit {
+   font-size: 30px;
+   line-height: 52px;
+   text-align: center;
+   color: var(--COLOR2);
+   margin-bottom: 12px;
+ }
+
+ form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .list {
+   flex-direction: column;
+ }
+
+ input {
+   background: #fff;
+   border: 1px solid #cfd8dc;
+   border-radius: 8px;
+   width: 300px;
+   height: 40px;
+   margin-top: 30px;
+ }
+
+textarea {
+   background: #fff;
+   border: 1px solid #cfd8dc;
+   border-radius: 8px;
+   width: 300px;
+   height: 150px;
+   margin-top: 30px;
+ }
+
+ .contact-btn {
+   font-family: var(--FF);
+   font-size: 17px;
+   line-height: 24px;
+   display: flex;
+   align-items: center;
+   letter-spacing: 0.03em;
+   width: 150px;
+   height: 50px;
+   color: var(--COLOR2);
+   border-radius: 8px;
+   margin-top: 10px;
+   /* margin-left: 10px; */
+ }
+
+ .orbit {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+ }
+
+ .orbit::after {
+   content:'';
+   height:1px;
+   width:10%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:155px;
+   bottom:30px;
+ }
+
+ .orbit_des {
+   padding:10px;
+   text-align:center;
+   margin:10px;
  }
