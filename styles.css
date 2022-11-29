@@ -10,7 +10,7 @@
   /* ||VARIABLES */
 :root {
     /* FONTS */
-    --FF:  'Poppins', sans-serif;
+    --FF:'COCOGOOSE', sans-serif ;
 
     /* COLOR */
     --COLOR1:#272A31;
@@ -20,8 +20,12 @@
 
 /* ||GENERAL STYLE */
 
+ a {
+   text-decoration: none;
+ }
+
  .hero {
-    background-image: url("images/header\ background.jpeg");
+    /* background-image: url("images/header\ background.jpeg"); */
     background-repeat: no-repeat;
     background-size: contain;
  }
@@ -39,15 +43,17 @@
 
  .hero_title {
     font-family: var(--FF);
-    color:var(--COLOR2);
+    color: transparent;
+    background-image: url("images/header\ background.jpeg");
+    -webkit-background-clip: text;
  }
 
  .hero_description {
-    margin: 90px 20px 20px 20px;
+    margin: 70px 20px 20px 20px;
     border: 1px solid white;
     padding:15px;
     background-color:rgba(202, 199, 199, 0.1);
-    font-family: var(--);
+    /* font-family: var(--FF); */
  }
 
  .des2 {
@@ -69,9 +75,10 @@
  }
 
  .hamburger_menu {
-    width:60px;
+    width:48px;
     height:48px;
-    background: none;
+    margin-left: 20px;
+    margin-top: 15px;
  }
 
  .menu {
@@ -87,6 +94,7 @@
  .courses {
     background-color: var(--COLOR1);
     background-image: url("images/diamond.png");
+    height: 115vh;
  }
 
  ul {
@@ -98,8 +106,6 @@
    padding:50px;
    color: white;
    position: relative;
-   /* display: inline-block; */
-   font-family: var(--FF);
  }
 
  .programs::after {
@@ -141,15 +147,15 @@
  .CS_des {
     color: white;
     justify-content: flex-end;
-    font-family:var(--FF);
+    /* font-family:var(--FF); */
  }
  
  .Java_des {
-   margin-left: 30px;
+   margin-left: 32px;
  }
 
  .RR_des {
-   margin-left: 19px;
+   margin-left: 22px;
  }
 
  .python_des {
@@ -158,4 +164,100 @@
 
  .CS_des {
    margin-left: 10px;
+ }
+
+ .course_btn {
+   text-align: center;
+   padding:20px;
+   background-color: var(--COLOR2);
+   color: white;
+   display: block;
+   margin: 40px auto;
+   font-family: var(--FF);
+ }
+
+ .course_btn:hover {
+   cursor: pointer;
+   background-color: blue;
+ }
+
+ .featured_lecturers {
+   text-align: center;
+   padding:50px;
+   color: var(--COLOR1);
+   position: relative;
+ }
+
+ .featured_lecturers::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:155px;
+   bottom:30px;
+ }
+
+ .lecturer_icons {
+   width:100px;
+   height:100px;
+ }
+
+ .python_lecturer,
+ .RR_lecturer,
+ .AND_lecturer,
+ .CS_lecturer,
+ .Dean_lecturer {
+   display: flex;
+   gap:15px;
+   justify-content: space-between;
+   /* background-color:rgba(202, 199, 199, 0.1); */
+   margin: 0 20px 10px 20px;
+   padding: 20px;
+ }
+
+ .Java_Lecturer {
+   display: flex;
+   gap:15px;
+   justify-content: space-between;
+   /* background-color:rgba(202, 199, 199, 0.1); */
+   margin: 0 20px 10px 20px;
+   padding: 20px;
+ }
+
+ .hidden_features {
+   display: none;
+ }
+
+ .lecturer_name {
+   color: var(--COLOR1);
+   flex-direction: column;
+ }
+
+ .lecturer_title {
+   color: var(--COLOR2);
+   flex-direction: column;
+ }
+
+ .more_info {
+   display: block;
+   text-align: center;
+   padding: 20px;
+   border: 1px solid #272A31;
+   margin: 0 20px 20px 20px;
+ }
+
+ .down {
+   width:16px;
+   height:10px;
+   margin-left: 5px;
+ }
+
+ .more_info:hover {
+   background-color: var(--COLOR2);
+   cursor: pointer;
+ }
+ .more_info:active {
+   background-color: red;
+   cursor: pointer;
  }
