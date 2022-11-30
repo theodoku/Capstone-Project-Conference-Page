@@ -73,6 +73,7 @@
    padding:15px;
    background-color: white;
    text-align: center;
+   font-family: var(--FF);
  }
 
  .des2 {
@@ -338,11 +339,22 @@ textarea {
    /* margin-left: 10px; */
  }
 
+ .contact-btn:hover {
+   background-color: var(--COLOR1);
+   cursor: pointer;
+ }
+ 
+ .contact-btn:active {
+   background-color: red;
+   cursor: pointer;
+ }
+
  .orbit {
    text-align: center;
    padding: 40px;
    margin: 10px;
    position: relative;
+   font-family: var(--FF);
  }
 
  .orbit::after {
@@ -359,4 +371,124 @@ textarea {
    padding:10px;
    text-align:center;
    margin:10px;
+   font-family: var(--FF);
+ }
+
+ .logo_im {
+   width: 320px;
+   height: 130px;
+   margin: 33px;
+   border: 1px solid grey;
+   padding: 5px;
+ }
+
+ .past_alumni {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+   font-family: var(--FF);
+ }
+
+ .past_alumni::after {
+   content:'';
+   height:1px;
+   width:10%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:155px;
+   bottom:30px;
+ }
+
+ .alumni_des {
+   padding:10px;
+   text-align:center;
+   margin:10px;
+   font-family: var(--FF);
+ }
+
+ .gallery {
+   padding: 20px;
+ }
+
+ .pic_2020,
+ .pic_2021 {
+   width: 350px;
+   margin-bottom: 30px;
+ }
+
+ .gallery .gallery_pic1 {
+   background:rgb(251, 124, 124, 0.4);
+   width: 350px;
+   height: 235px;
+   position: absolute;
+ }
+ .gallery .gallery_pic2 {
+   background:rgb(251, 124, 124, 0.4);
+   width: 350px;
+   height: 235px;
+   position: absolute;
+ }
+
+ .text {
+   color: white;
+   font-family: var(--FF);
+   text-align: center;
+   justify-content: center;
+   padding: 80px;
+ }
+
+ .partners {
+   background-color: var(--COLOR1);
+ }
+
+ .partner {
+   text-align: center;
+   padding: 40px;
+   margin: 10px;
+   position: relative;
+   font-family: var(--FF);
+ }
+
+ .partner::after {
+   content:'';
+   height:2px;
+   width:15%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:155px;
+   bottom:30px;
+ }
+
+ .durham_college {
+   width: 220px;
+   height: 120px;
+   padding:25px;
+ }
+
+ .blue_crest {
+   width: 150px;
+   margin-right: 50px;
+ }
+
+ .power_technology {
+   width:150px;
+   height:100px;
+   padding:10px;
+   margin:10px;
+ }
+
+ .trilogy_innovation {
+   width:150px;
+   padding:10px;
+   margin:10px;
+ }
+
+ .group1,
+ .group2 {
+   display: flex;
+ }
+
+ .group2 {
+   justify-content: space-between;
  }
