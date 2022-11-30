@@ -525,3 +525,150 @@ textarea {
  .reserved {
    font-family: var(--FF);
  }
+
+ .facebook {
+   width:20px;
+   height:20px;
+ }
+ 
+ .page,
+ .page_out {
+   color: white;
+ }
+
+ .nav-logo {
+   width:150px;
+   height: auto;
+ }
+
+ .header_wrapper {
+   display: none;
+ }
+
+ .navigation {
+   display: none;
+ }
+
+
+ /* ----MEDIA QUERIES SECTION---- */
+
+/* || DESKTOP VERSION */
+ @media  (min-width:768px) {
+ .container {
+   width:100%;
+   background-size: contain;
+   background-repeat: repeat;
+   background-position: center;
+   /* background-attachment: fixed; */
+   height: 120vh;
+ }
+ 
+ .header_wrapper {
+   display: block !important;
+   background-color: var(--COLOR1);
+ }
+
+ .header_items {
+   display: flex;
+   padding: 5px 5px;
+   gap: 6%;
+   align-items: center;
+   flex-direction: row;
+   margin-left: 900px;
+ }
+
+ .navbar {
+   display: none;
+ }
+
+ .navigation {
+   display: flex;
+   justify-content: space-around;
+   /* background-color: white; */ 
+ }
+
+ .nav_wrapper li {
+   display: inline-block;
+ }
+
+ .nav_items {
+   padding: 15px 15px;
+   margin: 10px;
+ }
+
+ .nav_linkA,
+ .nav_linkB,
+ .disable-link {
+   font-family: var(--FF);
+ }
+
+ .disable-link {
+   color: var(--COLOR1);
+ }
+
+ .nav_linkA,
+ .nav_linkB {
+   color: var(--COLOR2);
+ }
+
+ .nav_linkB{
+   border: 4px solid #EC5242;
+ }
+
+ .hero_box {
+   margin-top: -10px;
+}
+
+.hero_heading {
+ padding-top: 120px;
+ padding-left: 220px;
+ font-size: 2em;
+ font-family: var(--FF);
+}
+
+.hero_title {
+padding-left: 220px;
+font-size: 3em;
+}
+
+ .hero_description {
+   padding-left: 220px;
+   width: 63%;
+   margin-left: 10px;
+   background-color: rgb(242, 242, 242);
+   font-family: var(--FF);
+ }
+
+ .des2 {
+   padding-top: 50px;
+   padding-left: 220px;
+   font-size: 2em;
+   font-family: var(--FF) ;
+ }
+
+ .des3 {
+   padding-top: 2px;
+   padding-left: 220px;
+   font-size: 2em;
+ }
+
+ .courses {
+   height: auto;
+ }
+ 
+ .course_catalogue {
+   display: inline-flex;
+ }
+
+ .python,
+ .Java_Programming,
+ .Redux_React,
+ .Andriod_N_Developer,
+ .Cyber_security {
+   width:220px;
+   height: 220px;
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+ }
+ }
