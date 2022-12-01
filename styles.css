@@ -671,4 +671,91 @@ font-size: 3em;
    flex-direction: column;
    gap: 2px;
  }
+
+ .Btn {
+   display: none;
+ }
+
+ .programs {
+   font-family: var(--FF);
+ }
+ .see_program {
+   text-align: center;
+   color: white;
+   padding: 45px;
+   font-family: var(--FF);
+ }
+
+ .programs::after {
+   content:'';
+   height:2px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:650px;
+   bottom:40px;
+ }
+
+ ul.python,
+ ul.Java_Programming,
+ ul.Redux_React,
+ ul.Andriod_N_Developer,
+ ul.Cyber_security {
+   text-align: center;
+ }
+
+ .python_des,
+ .Java_des,
+ .RR_des,
+ .AND_des,
+ .CS_des {
+   font-family: var(--FF);
+   font-size: small;
+ }
+
+ .python,
+ .Java_Programming,
+ .Redux_React,
+ .Andriod_N_Developer,
+ .Cyber_security {
+ margin-left: 25px;
+ align-items: center;
+ /* justify-content: space-around; */
+ }
+
+ .dropdown {
+   display: none;
+ }
+
+ .hidden_features {
+   display: contents;
+ }
+
+ .featured_lecturers {
+   font-family: var(--FF);
+ }
+
+ .featured_lecturers::after {
+   content:'';
+   height:2px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left:650px;
+   bottom:40px;
+ }
+
+ .course_lecturers {
+   display: flex;
+ }
+
+ .python_lecturer,
+ .RR_lecturer,
+ .AND_lecturer {
+   flex-direction: column;
+ }
+
+ .right {
+   float: right;
+ }
  }
