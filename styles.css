@@ -235,14 +235,20 @@
    height:100px;
  }
 
+ .lecturer_IA {
+ width:120px;
+ height:120px;
+ }
+
  .python_lecturer,
  .RR_lecturer,
  .AND_lecturer,
  .CS_lecturer,
- .Dean_lecturer {
+ .Dean_lecturer,
+ .IA_lecturer{
    display: flex;
    gap:15px;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    /* background-color:rgba(202, 199, 199, 0.1); */
    margin: 0 20px 10px 20px;
    padding: 20px;
@@ -521,10 +527,11 @@ textarea {
    font-family: var(--FF);
    font-weight: bold;
  }
-
- .reserved {
+ 
+ /* .reserved {
    font-family: var(--FF);
- }
+
+ }  */
 
  .facebook {
    width:20px;
@@ -745,17 +752,37 @@ font-size: 3em;
    bottom:40px;
  }
 
- .course_lecturers {
-   display: flex;
+  .course_lecturers {
+   display: inline-grid;
+   grid-template-columns: auto auto;
+   margin-left: 160px;
+ }  
+
+ .lecturer_name,
+ .lecturer_title {
+   font-family: var(--FF);
+   font-size: small;
  }
 
- .python_lecturer,
- .RR_lecturer,
- .AND_lecturer {
-   flex-direction: column;
+ .partner::after {
+   content:'';
+   height:2px;
+   width:3%;
+   background:var(--COLOR2);
+   position: absolute;
+   left: 650px;
+   bottom:40px;
  }
 
- .right {
-   float: right;
+ .group1,
+ .group2 {
+   display: inline-block;
+   align-content: center;
+   margin-left: 300px;
+   margin-top: -20px;
+ }
+
+ .partner {
+    margin-top: 20px;
  }
  }
