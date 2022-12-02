@@ -8,12 +8,12 @@
     <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <title>Capstone Project-Sozo Graphics Institute</title>
 </head>
-<body>
+<body id="body">
     <div class="about">
         <section class="hero">   
             <div class="container">
-                    <div class="menu_btn">
-                        <img src="images/menu-rounded.png" class="hamburger_menu" alt="menu button">
+                    <div class="menu_btn" onclick="openMobileMenu()">
+                        <img src="images/menu-rounded.png" class="hamburger_menu"  alt="menu button">
                     </div>
                         <div class="header_wrapper">
                             <ul class="header_items">
@@ -23,36 +23,63 @@
                                 <li class="page_out">Log out</li>
                             </ul>
                         </div>
-                        <nav class="navigation">
+                        <nav class="navigation" id="nav">
                             <div class="btn_wrapper">
-                                <button class="close_btn">
+                                <button class="close_btn" onclick="closeMobileMenu()">
                                     <img src="images/closeBtn.png" alt="menu_btn">
                                 </button>
                             </div>
-                            <div class="nav-logo">
-                                <img src="images/logo-removebg-preview.png" class="nav-logo" alt="logo of Orbit Web Innovations">
+                            <div class="nav-logo" onclick="closeMobileMenu()">
+                               <a href="index.html"><img src="images/logo-removebg-preview.png" class="nav-logo" alt="logo of Orbit Web Innovations"></a>
                             </div>
                             <ul class="nav_wrapper">
-                                <li class="nav_items">
-                                    <a href="#about" class="nav_linkA">About</a> 
+                                <li class="nav_items" onclick="closeMobileMenu()">
+                                    <a href="#about.html" class="nav_linkA">About</a> 
                                 </li>
-                                <li class="nav_items">
+                                <li class="nav_items" onclick="closeMobileMenu()">
                                     <a href="#" class="disable-link">Program</a>
                                 </li>
-                                <li class="nav_items">
+                                <li class="nav_items" onclick="closeMobileMenu()">
                                     <a href="#" class="disable-link">Courses</a>
                                 </li>
-                                <li class="nav_items">
+                                <li class="nav_items" onclick="closeMobileMenu()" >
                                     <a href="#" class="disable-link">Admissions</a>
                                 </li>
-                                <li class="nav_items">
+                                <li class="nav_items" onclick="closeMobileMenu()">
                                     <a href="#" class="disable-link">News</a>
                                 </li>
-                                <li class="nav_items">
+                                <li class="nav_items" onclick="closeMobileMenu()">
                                     <a href="#index.html" class="nav_linkB">OW Inno.</a>
                                 </li>
                             </ul>
                         </nav>   
+                        <div class="nav_wrapper">
+                            <div class="desktop_nav">
+                                <div class="nav-logo">
+                                    <a href="about.html"><img src="images/logo-removebg-preview.png" class="nav-logo" alt="logo of Orbit Web Innovations"></a>
+                                </div>
+                                <ul class="nav_wrapper_desk">
+                                    <li class="nav_items_desk">
+                                        <a href="#about.html" class="nav_link_deskA">About</a> 
+                                    </li>
+                                    <li class="nav_items_desk">
+                                        <a href="#" class="disable-link_desk">Program</a>
+                                    </li>
+                                    <li class="nav_items_desk">
+                                        <a href="#" class="disable-link_desk">Courses</a>
+                                    </li>
+                                    <li class="nav_items_desk">
+                                        <a href="#" class="disable-link_desk">Admissions</a>
+                                    </li>
+                                    <li class="nav_items_desk">
+                                        <a href="#" class="disable-link_desk">News</a>
+                                    </li>
+                                    <li class="nav_items_desk">
+                                        <a href="#index.html" class="nav_link_deskB">OW Inno.</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                 <div class="hero_box">
                     <h1 class="hero_headingA">"Hello! Sharing World"</h1>
                     <h2 class="hero_titleA">ORBIT WEB INNOVATIONS</h2>
@@ -64,7 +91,10 @@
         </section>
         <section class="contact">
             <h2 class="contact_orbit">Contact Us</h2>
-            <form action="" id="form" method="Post">
+            <span>
+                <a href="mailto:orbitwebinnog@edu.org" class="email">orbitwebinnog@edu.org</a>
+              </span>
+            <form action="https://formspree.io/f/meqdvkdq" id="form" method="Post">
                 <ul class="list">
                 <li class="listInput">
                     <label>
@@ -150,5 +180,6 @@
            </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

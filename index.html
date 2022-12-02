@@ -8,50 +8,77 @@
     <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
     <title>Capstone Project-Sozo Graphics Institute</title>
 </head>
-<body>
+<body id="body">
     <section class="hero">   
-        <div class="header">
-            <div class="header_wrapper">
-                <ul class="header_items">
-                    <li><img src="images/-facebook-logo.png" class="facebook" alt="facebook Logo"></li>
-                    <li><img src="images/twitter.png" class="twitter" alt="twitter bird"></li>
-                    <li class="page">My Page</li>
-                    <li class="page_out">Log out</li>
-                </ul>
-            </div>
-            <nav class="navigation">
-                <div class="nav-logo">
-                    <img src="images/logo-removebg-preview.png" class="nav-logo" alt="logo of Orbit Web Innovations">
-                </div>
-                <ul class="nav_wrapper">
-                    <li class="nav_items">
-                        <a href="#about" class="nav_linkA">About</a> 
-                    </li>
-                    <li class="nav_items">
-                        <a href="#" class="disable-link">Program</a>
-                    </li>
-                    <li class="nav_items">
-                        <a href="#" class="disable-link">Courses</a>
-                    </li>
-                    <li class="nav_items">
-                        <a href="#" class="disable-link">Admissions</a>
-                    </li>
-                    <li class="nav_items">
-                        <a href="#" class="disable-link">News</a>
-                    </li>
-                    <li class="nav_items">
-                        <a href="#index.html" class="nav_linkB">OW Inno.</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
         <div class="container">
-            <div class="navbar">
-                <div class="menu_btn">
-                    <img src="images/menu-rounded.png" class="hamburger_menu" alt="menu button">
-                </div>
+            <div class="menu_btn" onclick="openMobileMenu()">
+                <img src="images/menu-rounded.png" class="hamburger_menu"  alt="menu button">
             </div>
-            <div class="desktop">
+                <div class="header_wrapper">
+                    <ul class="header_items">
+                        <li><img src="images/-facebook-logo.png" class="facebook" alt="facebook Logo"></li>
+                        <li><img src="images/twitter.png" class="twitter" alt="twitter bird"></li>
+                        <li class="page">My Page</li>
+                        <li class="page_out">Log out</li>
+                    </ul>
+                </div>
+                <nav class="navigation" id="nav">
+                    <div class="btn_wrapper">
+                        <button class="close_btn" onclick="closeMobileMenu()">
+                            <img src="images/closeBtn.png" alt="menu_btn">
+                        </button>
+                    </div>
+                    <div class="nav-logo"onclick="closeMobileMenu()" >
+                        <img src="images/logo-removebg-preview.png" class="nav-logo" alt="logo of Orbit Web Innovations">
+                    </div>
+                    <ul class="nav_wrapper">
+                        <li class="nav_items" onclick="closeMobileMenu()" >
+                            <a href="#about" class="nav_linkA">About</a> 
+                        </li>
+                        <li class="nav_items" onclick="closeMobileMenu()">
+                            <a href="#" class="disable-link">Program</a>
+                        </li>
+                        <li class="nav_items" onclick="closeMobileMenu()" >
+                            <a href="#" class="disable-link">Courses</a>
+                        </li>
+                        <li class="nav_items" onclick="closeMobileMenu()">
+                            <a href="#" class="disable-link">Admissions</a>
+                        </li>
+                        <li class="nav_items" onclick="closeMobileMenu()" >
+                            <a href="#" class="disable-link">News</a>
+                        </li>
+                        <li class="nav_items" onclick="closeMobileMenu()">
+                            <a href="#index.html" class="nav_linkB">OW Inno.</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="nav_wrapper">
+                    <div class="desktop_nav">
+                        <div class="nav-logo">
+                            <img src="images/logo-removebg-preview.png" class="nav-logo" alt="logo of Orbit Web Innovations">
+                        </div>
+                        <ul class="nav_wrapper_desk">
+                            <li class="nav_items_desk">
+                                <a href="#about" class="nav_link_deskA">About</a> 
+                            </li>
+                            <li class="nav_items_desk">
+                                <a href="#" class="disable-link_desk">Program</a>
+                            </li>
+                            <li class="nav_items_desk">
+                                <a href="#" class="disable-link_desk">Courses</a>
+                            </li>
+                            <li class="nav_items_desk">
+                                <a href="#" class="disable-link_desk">Admissions</a>
+                            </li>
+                            <li class="nav_items_desk">
+                                <a href="#" class="disable-link_desk">News</a>
+                            </li>
+                            <li class="nav_items_desk">
+                                <a href="#index.html" class="nav_link_deskB">OW Inno.</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="hero_box">
                     <h1 class="hero_heading">"Hello! Sharing World"</h1>
                     <h2 class="hero_title">ORBIT WEB INNOVATIONS</h2>
@@ -106,7 +133,7 @@
     </main>
     <section class="featured">
         <h2 class="featured_lecturers">Featured Lecturers</h2>
-        <div class="course_lecturers">
+        <div class="course_lecturers" id="lecturer-list">
                 <ul class="python_lecturer">
                     <li><img src="images/lecturer 1.jpg" class="lecturer_icons" alt="Picture of a man in a blue suite"></li>
                     <h3 class="lecturer_name">Dr. Bright Shaw<br><p class="lecturer_title">Professor in Informatics</p><br><small>Phd in Information science and head of Informatics dept.</small></h3> 
@@ -117,7 +144,7 @@
                 </ul>
                     <div class="dropdown">
                         <ul>
-                            <li><a href="#" class="more_info">MORE<img src="images/drop.png" class="down"></a></li>
+                            <li><a href="#" class="more_info" id="more_info" onclick="moreBtn()">MORE<img src="images/drop.png" class="down"></a></li>
                         </ul> 
                     </div> 
             <div class="hidden_features">
@@ -158,5 +185,6 @@
         </div>
         </section>
    </div>
+   <script src="script.js"></script>
 </body>
 </html>
