@@ -80,14 +80,20 @@
    font-family: var(--FF);
  }
 
+ .des1 {
+   font-family: var(--FF);
+ }
+
  .des2 {
     margin-left: 20px;
     margin-bottom: 9px;
     color: var(--COLOR1);
+    font-family: var(--FF)
  }
 
  .des3 {
     margin-left: 20px;
+    
  }
 
  .container {
@@ -179,7 +185,7 @@
  .CS_des {
     color: white;
     justify-content: flex-end;
-    /* font-family:var(--FF); */
+    font-family:var(--FF);
  }
  
  .Java_des {
@@ -568,11 +574,6 @@ textarea {
  .header_wrapper {
    display: none;
  }
-
- .navigation {
-   display: none;
- }
-
  .see {
    display: none;
  }
@@ -685,10 +686,6 @@ font-size: 2em;
    margin-left: 10px;
    background-color: white;
    font-family: var(--FF);
- }
-
- .des1 {
-/* padding: 10px; */
  }
 
  .des2 {
@@ -955,36 +952,4 @@ font-size: 2em;
    position: relative;
 }
 
-.python::before {
-content: '';
-position: absolute;
-left:0;
-bottom:0;
-width:100%;
-box-sizing: border-box;
-height: 100%;
-border-bottom: 3px solid white;
-border-left: 3px solid white;
-transition: all 0.8s ease;
-}
-
-.python::after {
-content: '';
-position: absolute;
-right:0;
-top:0;
-width:100%;
-box-sizing: border-box;
-height: 100%;
-border-top: 3px solid white;
-border-right: 3px solid white;
-transition: all 0.8s ease;
-}
-
-.python:hover::before
-.python:hover::after {
-   border-color: white;
-   width: 100%;
-   height: 100%;
-}
 }
