@@ -1,20 +1,15 @@
-const body = document.getElementById('body');
 const nav = document.getElementById('nav');
-const lecturerList = document.getElementById('lecturer-list');
-const moreInfo = document.getElementById('more_info');
-const form = document.getElementById('form');
 const email = document.getElementById('email');
-const error = document.getElementById('error');
 const fname = document.getElementById('fname');
 const message = document.getElementById('msg');
 
 
 function openMobileMenu() {
-    nav.style.display = 'block';
+nav.style.display = 'block';
 }
   
 function closeMobileMenu() {
-    nav.style.display = 'none';
+nav.style.display = 'none';
 }
   
 openMobileMenu();
