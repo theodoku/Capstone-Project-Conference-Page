@@ -103,7 +103,8 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://theodoku.github.io/)
+- [Live Demo Link](https://theodoku.github.io/Capstone-Project-Conference-Page/)
+- [Live Demo Video](https://www.loom.com/share/0bce838184df4710920c9797df14902d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +136,7 @@ Example command:
 Clone this repository to your desired folder:
 
 ```
-git clone https://github.com/theodoku/Project_Portfolio
+git clone https://github.com/theodoku/Capstone-Project-Conference-Page/)
 ```
 
 Open a index.html file with your code editor of your choice and/or a browser of your choice.
@@ -254,11 +255,11 @@ Give a ⭐️ if you like this project!
 
 <-- ACKNOWLEDGEMENTS -->
 
-<-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank Cindy Shin for her beautiful design -->
+I would like to thank Cindy Shin for her beautiful design https://www.behance.net/adagio07
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 

@@ -265,10 +265,6 @@
    padding: 20px;
  }
 
- .hidden_features {
-   /* display: none; */
- }
-
  .lecturer_name {
    color: var(--COLOR1);
    flex-direction: column;
@@ -728,8 +724,8 @@ small {
 }
 
 .hero_headingA {
- padding-top: 50px;
- padding-left: 100px;
+ padding-top: 40px;
+ padding-left: 80px;
  font-size: 2em;
  font-family: var(--FF);
  text-align: center;
@@ -742,21 +738,21 @@ font-size: 3em;
 }
 
 .hero_titleA {
-padding-left: 100px;
+padding-left: 60px;
 font-size: 2em;
 }
 
  .hero_description {
-   padding-left: 220px; 
-   width: 63%;
-   margin-left: 10px;
+   padding-left: 20px; 
+   width: 55%;
+   margin-left: 225px;
    background-color: rgb(242, 242, 242);
    font-family: var(--FF);
  }
  .hero_descriptionA {
-    padding-left: 220px;
-   width: 63%;
-   margin-left: 10px;
+  padding-left: 20px;
+   width: 55%;
+   margin-left: 300px;
    background-color: white;
    font-family: var(--FF);
  }
@@ -780,6 +776,7 @@ font-size: 2em;
  
  .course_catalogue {
    display: inline-flex;
+   margin-left: 8%;
  }
 
  .python,
@@ -840,7 +837,7 @@ font-size: 2em;
  .Redux_React,
  .Andriod_N_Developer,
  .Cyber_security {
- margin-left: 25px;
+ margin-left: -17px;
  align-items: center;
  /* justify-content: space-around; */
  }

@@ -62,42 +62,42 @@ function getFormData() {
   
 const LECTURERS_DATA = [
     {
-        image: "./images/lecturer1.jpg",
+        image: "images/lecturer1.png",
         name: "Dr. Bright Shaw",
         title: "Professor in Informatics",
         info: "Phd in Information science and head of Informatics dept.",
         Rank: "1",
     },
     {
-        image: "./images/lecturer2.jpg",
+        image: "images/lecturer3.png",
         name: "Jelyn Naa Barkey",
         title: "Professor in Javascript Applications",
         info: "Rich experience in Java and featured in Web Apps of various tech companies.",
         Rank: "2",
     },
     {
-        image: "./images/lecturer3.jpg",
+        image: "images/lecturer4.png",
         name: "Dr. Shenorah Mingles",
         title: "Professor in Information Technology",
         info: "A tech savvy with in-depth knowledge of modern technologies.",
         Rank: "3",
     },
     {
-        image: "./images/lecturer4.jpg",
+        image: "images/lecturer5.png",
         name: "Dr. Anastacia Clothworthy",
         title: "Principal of  Orbit Web Innovations",
         info: "Orbit Web Inno. is the brainchild of Anas. Started the school in 2019 to help educate and connect people from around the world.",
         Rank: "4",
     },
     {
-        image: "./images/lecturer5.jpg",
+        image: "images/lecturer2.png",
         name: "Dr. George Greggory",
         title: "Professor in Web Applications",
         info: "Greg a Web Application fanatic with a rich portfolio of collaborative project with great tech companies.",
         Rank: "5",
     },
     {
-        image: "./images/lecturer6.jpg",
+        image: "images/lecturer6.png",
         name: "Dr. Frederick Khan",
         title: "Professor in Artificial Intelligence",
         info: "Knowledge in simulating  human intelligence in machines that are programmed to think like humans and mimic their actions.",
