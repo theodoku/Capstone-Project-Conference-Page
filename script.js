@@ -29,97 +29,114 @@ function getFormData() {
     localStorage.setItem('formData', JSON.stringify(formData));
   }
   
-  function persistData() {
-    if (!localStorage.getItem('formData')) {
-      getFormData();
-    } else {
-      const fetchData = JSON.parse(localStorage.getItem('formData'));
-      fname.setAttribute('value', fetchData.fname);
-      email.setAttribute('value', fetchData.email);
-      message.textContent = fetchData.message;
-    }
-  }
+  // function persistData() {
+  //   if (!localStorage.getItem('formData')) {
+  //     getFormData();
+  //   } else {
+  //     const fetchData = JSON.parse(localStorage.getItem('formData'));
+  //     fname.setAttribute('value', fetchData.fname);
+  //     email.setAttribute('value', fetchData.email);
+  //     message.textContent = fetchData.message;
+  //   }
+  // }
   
-  window.onload = () => {
-    persistData();
-  };
+  // window.onload = () => {
+  //   persistData();
+  // };
   
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
+  // form.addEventListener('submit', (e) => {
+  //   e.preventDefault();
   
-    if (email.value !== email.value.toLowerCase()) {
-      error.textContent = 'Please the content of the email field has to be in lower case.';
-    } else {
-      error.textContent = '';
-      persistData();
-      form.submit();
-    }
-  });
+  //   if (email.value !== email.value.toLowerCase()) {
+  //     error.textContent = 'Please the content of the email field has to be in lower case.';
+  //   } else {
+  //     error.textContent = '';
+  //     persistData();
+  //     form.submit();
+  //   }
+  // });
   
-  fname.addEventListener('change', getFormData);
-  email.addEventListener('change', getFormData);
-  message.addEventListener('change', getFormData);
+  // fname.addEventListener('change', getFormData);
+  // email.addEventListener('change', getFormData);
+  // message.addEventListener('change', getFormData);
   
 const LECTURERS_DATA = [
     {
-        image: "images/lecturer1.jpg",
+        image: "./images/lecturer1.jpg",
         name: "Dr. Bright Shaw",
         title: "Professor in Informatics",
         info: "Phd in Information science and head of Informatics dept.",
+        Rank: "1",
     },
     {
-        image: "images/lecturer3.jpg",
+        image: "./images/lecturer2.jpg",
         name: "Jelyn Naa Barkey",
         title: "Professor in Javascript Applications",
         info: "Rich experience in Java and featured in Web Apps of various tech companies.",
+        Rank: "2",
     },
     {
-        image: "images/lecturer4.jpg",
+        image: "./images/lecturer3.jpg",
         name: "Dr. Shenorah Mingles",
         title: "Professor in Information Technology",
         info: "A tech savvy with in-depth knowledge of modern technologies.",
+        Rank: "3",
     },
     {
-        image: "images/lecturer5.jpg",
+        image: "./images/lecturer4.jpg",
         name: "Dr. Anastacia Clothworthy",
         title: "Principal of  Orbit Web Innovations",
         info: "Orbit Web Inno. is the brainchild of Anas. Started the school in 2019 to help educate and connect people from around the world.",
+        Rank: "4",
     },
     {
-        image: "images/lecturer6.jpg",
+        image: "./images/lecturer5.jpg",
         name: "Dr. George Greggory",
         title: "Professor in Web Applications",
         info: "Greg a Web Application fanatic with a rich portfolio of collaborative project with great tech companies.",
+        Rank: "5",
     },
     {
-        image: "images/lecturer.IA.jpg",
+        image: "./images/lecturer6.jpg",
         name: "Dr. Frederick Khan",
         title: "Professor in Artificial Intelligence",
         info: "Knowledge in simulating  human intelligence in machines that are programmed to think like humans and mimic their actions.",
+        Rank: "6",
     },
 ];
 
-LECTURERS_DATA.map(
-    (lecturer, index) =>
-     (lecturerList.innerHTML += `<div class="lecturer-item" id=lecturer-item-${index}">
-        <div class=lecturer-image">
-        <img src=${lecturer.image}" alt="lecturer" class="lp" />
-        </div>
-        <div class="lecturer-content">
-        <h3 id="lecturer-title">${lecturer.name}</h3>
-        <h4 id="lecturer-subTitle">
-        ${lecturer, title}
-        </h4>
-        <hr id="underline" />
-        <p id="lecturer-text">
-        ${lecturer.info}
-        </p>
-        </div>
-        </div>
-    `)
-    
-);
-
+function featuredFunction() {
+  let featureCard = '';
+  LECTURERS_DATA.forEach((item) => {
+    const Ranking = item.Rank;
+    const lecturerList = item.name;
+    const { image } = item;
+    const { title } = item;
+    const { info} = item;
+    if (Ranking <= 2) {
+      featureCard += `<div class="course_lecturers">
+      <img src="${image}" alt="" class="lecturer_icon">
+      <div class="col-lg-6 col-6 col-sm-6">
+          <h2 class="lecturer_name">${lecturerList}</h2>
+          <p class="lecturer_title">${title}</p>
+          <small>${info}</small>
+      </div>
+    </div>`;
+    } else {
+      featureCard += `<div class="course_lecturers class= hide">
+      <img src="${image}" alt="" class="lecturer_icon">
+      <div class="col-lg-6 col-6 col-sm-6">
+          <h2 class="lecturer_name">${lecturerList}</h2>
+          <p class="lecturer_title">${title}</p>
+          <small>${info}</small>
+      </div>
+    </div>`;
+    }
+  });
+  document.getElementById('lecturer-list').innerHTML = featureCard;
+}
+featuredFunction();
+  
 const moreBtn = () => {
     const lecturerItem = document.querySelectorAll(".lecturer-item");
     for (let i = items; i < items + 2; i++) {

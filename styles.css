@@ -236,14 +236,10 @@
    bottom:30px;
  }
 
- .lecturer_icons {
-   width:100px;
-   height:100px;
- }
-
- .lecturer_IA {
- width:120px;
- height:120px;
+ .lecturer_icon {
+   width:120px;
+   height:120px;
+   margin: 5px;
  }
 
  .python_lecturer,
@@ -270,7 +266,7 @@
  }
 
  .hidden_features {
-   display: none;
+   /* display: none; */
  }
 
  .lecturer_name {
@@ -644,6 +640,20 @@ a.email {
   margin: 0 auto;
 }
 
+small {
+  font-family: var(--FF);
+}
+
+.course_lecturers {
+  margin-left: 10px;
+}
+
+@media (max-width:767px) {
+  .hide {
+    display: none !important;
+  }
+}
+
  /* ----MEDIA QUERIES SECTION---- */
 
 /* || DESKTOP VERSION */
@@ -711,7 +721,7 @@ a.email {
 }
 
 .hero_heading {
- padding-top: 25px;
+ padding-top: 35px;
  padding-left: 220px;
  font-size: 2em;
  font-family: var(--FF);
@@ -860,7 +870,8 @@ font-size: 2em;
   .course_lecturers {
    display: inline-grid;
    grid-template-columns: auto auto;
-   margin-left: 160px;
+   margin-left: 100px;
+   padding: 10px;
  }  
 
  .lecturer_name,
@@ -1024,4 +1035,7 @@ a.email {
   color: var(--COLOR1);
   font-size: large;
 }
+ small {
+  font-size: x-small;
+ }
 }

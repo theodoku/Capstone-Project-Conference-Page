@@ -52,12 +52,13 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 
-**[Portfolio_Project]** is a... My Portfolio to showcase my skills acquired.
+**[Capstone Project 1]** is a... wesite for a software programming school.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 - HTML
 - CSS
+  -JavaScript
 
 <!-- ### Tech Stack <a name="tech-stack"></a> -->
 
@@ -85,16 +86,16 @@ After you're finished please remove all the comments and instructions!
 </details> -->
 
 <!-- Features -->
-<!--
+
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Responsive]**
+- **[Mobile_Menu_Interactions]**
+- **[Dynamic_page]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
@@ -217,11 +218,6 @@ Example:
 
 - GitHub: [@TheoDoku](https://github.com/theodoku)
 
-👤 **Author2**
-
-- GitHub: [@SabiMantock](https://github.com/SabiMantock)
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -256,13 +252,13 @@ Give a ⭐️ if you like this project!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
+<-- ACKNOWLEDGEMENTS -->
 
-<!-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+<-- ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank... -->
+I would like to thank Cindy Shin for her beautiful design -->
 
 <!-- <p align="right">(<a href="#readme-top">back to top</a>)</p> -->
 
