@@ -784,10 +784,6 @@ small {
     font-size: 2em;
   }
 
-  .courses {
-    height: auto;
-  }
-
   .course_catalogue {
     display: inline-flex;
     margin-left: 8%;
@@ -803,6 +799,8 @@ small {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    margin-left: -17px;
+    align-items: center;
   }
 
   .Btn {
@@ -845,17 +843,6 @@ small {
   .CS_des {
     font-family: var(--FF);
     font-size: small;
-  }
-
-  .python,
-  .Java_Programming,
-  .Redux_React,
-  .Andriod_N_Developer,
-  .Cyber_security {
-    margin-left: -17px;
-    align-items: center;
-
-    /* justify-content: space-around; */
   }
 
   .dropdown {
@@ -1010,9 +997,9 @@ small {
     display: none;
   }
 
-  .partner {
+  /* .partner {
     display: none;
-  }
+  } */
 
   .footer_home {
     background-color: white;
@@ -1038,6 +1025,7 @@ small {
 
   .courses {
     position: relative;
+    height: auto;
   }
 
   .btn_wrapper {
