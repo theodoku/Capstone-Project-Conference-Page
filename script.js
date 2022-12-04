@@ -3,7 +3,6 @@ const email = document.getElementById('email');
 const fname = document.getElementById('fname');
 const message = document.getElementById('msg');
 
-
 function openMobileMenu() {
 nav.style.display = 'block';
 }
@@ -15,14 +14,14 @@ nav.style.display = 'none';
 openMobileMenu();
 closeMobileMenu();
 
-function getFormData() {
-    const formData = {
-      fname: fname.value,
-      message: message.value,
-      email: email.value,
-    };
-    localStorage.setItem('formData', JSON.stringify(formData));
-  }
+// function getFormData() {
+//     const formData = {
+//       fname: fname.value,
+//       message: message.value,
+//       email: email.value,
+//     };
+//     localStorage.setItem('formData', JSON.stringify(formData));
+//   }
   
   // function persistData() {
   //   if (!localStorage.getItem('formData')) {
