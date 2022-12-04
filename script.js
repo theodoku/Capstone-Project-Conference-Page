@@ -1,7 +1,4 @@
 const nav = document.getElementById('nav');
-const email = document.getElementById('email');
-const fname = document.getElementById('fname');
-const message = document.getElementById('msg');
 
 function openMobileMenu() {
 nav.style.display = 'block';
@@ -131,16 +128,16 @@ function featuredFunction() {
 }
 featuredFunction();
   
-const moreBtn = () => {
-    const lecturerItem = document.querySelectorAll(".lecturer-item");
-    for (let i = items; i < items + 2; i++) {
-        if (lecturerItem[i]) {
-            lecturerItem[i].style.display = "flex";
-        } else {
-            lecturerBtn.style.display = "none";
-        }
-    }
-    return (items += 2);
-};
+// const moreBtn = () => {
+//     const lecturerItem = document.querySelectorAll(".lecturer-item");
+//     for (let i = items; i < items + 2; i++) {
+//         if (lecturerItem[i]) {
+//             lecturerItem[i].style.display = "flex";
+//         } else {
+//             lecturerBtn.style.display = "none";
+//         }
+//     }
+//     return (items += 2);
+// };
 
-moreBtn;
+// moreBtn;
