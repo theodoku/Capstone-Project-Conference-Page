@@ -1,4 +1,4 @@
-const body = document.getElementById('body');
+const nav = document.getElementById('nav');
 
 function openMobileMenu() {
 nav.style.display = 'block';
