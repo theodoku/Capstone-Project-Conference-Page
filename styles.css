@@ -466,6 +466,7 @@ textarea {
 
 .partners {
   background-color: var(--COLOR1);
+
   /* display: none; */
 }
 
@@ -639,8 +640,8 @@ textarea {
 }
 
 .reach_out {
-margin-left: 45px;
-font-family: var(--FF);
+  margin-left: 45px;
+  font-family: var(--FF);
 }
 
 a.email {
@@ -683,6 +684,7 @@ small {
     background-repeat: repeat;
     background-position: center;
     background-image: url("images/home-bg-desk.png");
+
     /* background-attachment: fixed; */
     height: 120vh;
   }
