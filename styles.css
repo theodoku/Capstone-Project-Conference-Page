@@ -661,6 +661,10 @@ small {
   .hide {
     display: none !important;
   }
+
+  /* #more_info {
+    display: block;
+  } */
 }
 
 /* ----MEDIA QUERIES SECTION---- */

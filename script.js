@@ -1,4 +1,16 @@
 const nav = document.getElementById('nav');
+// const moreInfo = document.getElementById('more_info');
+// const hide = document.querySelector('.hide');
+
+// function revealContent() {
+//   if (hide.classList.contains('more_info')) {
+//     hide.classList.remove('more_info')
+//   } else {
+//     hide.classList.add('hide')
+//   }
+// }
+
+// moreInfo.addEventListener('click', revealContent);
 
 function openMobileMenu() {
 nav.style.display = 'block';
@@ -11,46 +23,6 @@ nav.style.display = 'none';
 openMobileMenu();
 closeMobileMenu();
 
-// function getFormData() {
-//     const formData = {
-//       fname: fname.value,
-//       message: message.value,
-//       email: email.value,
-//     };
-//     localStorage.setItem('formData', JSON.stringify(formData));
-//   }
-  
-  // function persistData() {
-  //   if (!localStorage.getItem('formData')) {
-  //     getFormData();
-  //   } else {
-  //     const fetchData = JSON.parse(localStorage.getItem('formData'));
-  //     fname.setAttribute('value', fetchData.fname);
-  //     email.setAttribute('value', fetchData.email);
-  //     message.textContent = fetchData.message;
-  //   }
-  // }
-  
-  // window.onload = () => {
-  //   persistData();
-  // };
-  
-  // form.addEventListener('submit', (e) => {
-  //   e.preventDefault();
-  
-  //   if (email.value !== email.value.toLowerCase()) {
-  //     error.textContent = 'Please the content of the email field has to be in lower case.';
-  //   } else {
-  //     error.textContent = '';
-  //     persistData();
-  //     form.submit();
-  //   }
-  // });
-  
-  // fname.addEventListener('change', getFormData);
-  // email.addEventListener('change', getFormData);
-  // message.addEventListener('change', getFormData);
-  
 const LECTURERS_DATA = [
     {
         image: "images/lecturer1.png",
@@ -128,16 +100,3 @@ function featuredFunction() {
 }
 featuredFunction();
   
-// const moreBtn = () => {
-//     const lecturerItem = document.querySelectorAll(".lecturer-item");
-//     for (let i = items; i < items + 2; i++) {
-//         if (lecturerItem[i]) {
-//             lecturerItem[i].style.display = "flex";
-//         } else {
-//             lecturerBtn.style.display = "none";
-//         }
-//     }
-//     return (items += 2);
-// };
-
-// moreBtn;
