@@ -466,6 +466,7 @@ textarea {
 
 .partners {
   background-color: var(--COLOR1);
+  /* display: none; */
 }
 
 .partner {
@@ -637,9 +638,14 @@ textarea {
   font-family: var(--FF);
 }
 
+.reach_out {
+margin-left: 45px;
+font-family: var(--FF);
+}
+
 a.email {
   margin-left: 120px;
-  color: #272a31;
+  color: var(--COLOR2);
 }
 
 #error {
@@ -676,7 +682,7 @@ small {
     background-size: contain;
     background-repeat: repeat;
     background-position: center;
-
+    background-image: url("images/home-bg-desk.png");
     /* background-attachment: fixed; */
     height: 120vh;
   }
@@ -734,15 +740,15 @@ small {
   }
 
   .hero_heading {
-    padding-top: 35px;
+    padding-top: 140px;
     padding-left: 220px;
     font-size: 2em;
     font-family: var(--FF);
   }
 
   .hero_headingA {
-    padding-top: 40px;
-    padding-left: 80px;
+    padding-top: 140px;
+    padding-left: 40px;
     font-size: 2em;
     font-family: var(--FF);
     text-align: center;
@@ -902,9 +908,9 @@ small {
     margin-top: -20px;
   }
 
-  .partner {
+  /* .partner {
     margin-top: 20px;
-  }
+  } */
 
   .desktop_partners ul {
     margin-left: 330px;
@@ -1001,9 +1007,10 @@ small {
     display: none;
   }
 
-  /* .partner {
+  .partner {
     display: none;
-  } */
+    margin-top: 20px;
+  }
 
   .footer_home {
     background-color: white;
@@ -1036,9 +1043,14 @@ small {
     display: none;
   }
 
+  .reach_out {
+    margin-left: 500px;
+    font-family: var(--FF);
+  }
+
   a.email {
     margin-left: 580px;
-    color: var(--COLOR1);
+    color: var(--COLOR2);
     font-size: large;
   }
 
