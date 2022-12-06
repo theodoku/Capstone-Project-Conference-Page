@@ -78,17 +78,19 @@ function featuredFunction() {
     const { info} = item;
     if (Ranking <= 2) {
       featureCard += `<div class="course_lecturers">
-      <img src="${image}" alt="" class="lecturer_icon">
-      <div class="col-lg-6 col-6 col-sm-6">
+      <img src="images/checkers.png" alt="checkers" class="checkers"/>
+      <img src="${image}" alt="" class="lecturer_icon"/>
+      <div class="lecturer_content">
           <h2 class="lecturer_name">${lecturerList}</h2>
           <p class="lecturer_title">${title}</p>
           <small>${info}</small>
       </div>
     </div>`;
     } else {
-      featureCard += `<div class="course_lecturers class= hide">
-      <img src="${image}" alt="" class="lecturer_icon">
-      <div class="col-lg-6 col-6 col-sm-6">
+      featureCard += `<div class="course_lecturers hide">
+      <img src="images/checkers.png" alt="checkers" class="checkers"/>
+      <img src="${image}" alt="" class="lecturer_icon"/>
+      <div class="lecturer_content">
           <h2 class="lecturer_name">${lecturerList}</h2>
           <p class="lecturer_title">${title}</p>
           <small>${info}</small>
