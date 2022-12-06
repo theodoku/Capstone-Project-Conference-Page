@@ -133,6 +133,7 @@ a {
   background-color: var(--COLOR1);
   background-image: url("images/diamond.png");
   height: 115vh;
+
   /* width: 100%; */
 }
 
@@ -271,6 +272,7 @@ ul {
 
 .lecturer_name {
   color: var(--COLOR1);
+
   /* flex-direction: column; */
   margin-top: -35px;
 }
