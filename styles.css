@@ -133,8 +133,6 @@ a {
   background-color: var(--COLOR1);
   background-image: url("images/diamond.png");
   height: 115vh;
-
-  /* width: 100%; */
 }
 
 ul {
@@ -187,8 +185,6 @@ ul {
 .CS_des {
   color: white;
   justify-content: flex-end;
-
-  /* font-family:var(--FF); */
 }
 
 .Java_des {
@@ -240,12 +236,17 @@ ul {
 }
 
 .lecturer_icon {
-  width: 100px;
+  width: 70px;
   height: 70px;
   margin: 8px;
-  padding-left: 20px;
+  padding-left: 6px;
   position: absolute;
   left: 0;
+}
+
+.featured-image {
+  position: relative;
+  height: auto;
 }
 
 .python_lecturer,
@@ -264,22 +265,18 @@ ul {
   display: flex;
   gap: 15px;
   justify-content: space-between;
-
-  /* background-color:rgba(202, 199, 199, 0.1); */
   margin: 0 20px 10px 20px;
   padding: 20px;
 }
 
 .lecturer_name {
   color: var(--COLOR1);
-
-  /* flex-direction: column; */
   margin-top: -35px;
 }
 
 .lecturer_title {
   color: var(--COLOR2);
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .more_info {
@@ -361,8 +358,6 @@ textarea {
   color: var(--COLOR2);
   border-radius: 8px;
   margin-top: 10px;
-
-  /* margin-left: 10px; */
 }
 
 .contact-btn:hover {
@@ -517,23 +512,15 @@ textarea {
 
 .blue_crest {
   width: 150px;
-
-  /* margin-right: 50px; */
 }
 
 .power_technology {
   width: 150px;
   height: 100px;
-
-  /* padding:10px;
-   margin:10px; */
 }
 
 .trilogy_innovation {
   width: 150px;
-
-  /* padding:10px;
-   margin:10px; */
 }
 
 .group1,
@@ -663,6 +650,11 @@ small {
   margin-left: 100px;
 }
 
+hr#underline {
+  width: 5%;
+  margin: 10px 0;
+}
+
 .hidden_features {
   display: none;
 }
@@ -683,8 +675,6 @@ small {
     background-repeat: repeat;
     background-position: center;
     background-image: url("images/home-bg-desk.png");
-
-    /* background-attachment: fixed; */
     height: 120vh;
   }
 
@@ -882,8 +872,9 @@ small {
   .course_lecturers {
     display: inline-grid;
     grid-template-columns: auto auto;
-    margin-left: 100px;
-    padding: 14px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
   }
 
   .lecturer_name,
@@ -901,14 +892,6 @@ small {
     left: 650px;
     bottom: 30px;
   }
-
-  /* .group1,
-  .group2 {
-    display: inline-block;
-    align-content: center;
-    margin-left: 300px;
-    margin-top: -20px;
-  } */
 
   /* .partner {
     margin-top: 20px;
@@ -1061,16 +1044,17 @@ small {
   }
 
   .lecturer_icon {
-    width: 100px;
+    width: 70px;
     height: 70px;
     margin-top: -42px;
     position: absolute;
-    left: 819px;
+    left: 0;
   }
 
   .checkers {
     width: 40px;
     position: relative;
     top: -50px;
+    opacity: 1;
   }
 }

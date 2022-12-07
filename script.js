@@ -26,7 +26,7 @@ closeMobileMenu();
 const LECTURERS_DATA = [
     {
         image: "images/lecturer1.png",
-        name: "Dr. Bright Shaw",
+        name:  "Dr. Bright Shaw",
         title: "Professor in Informatics",
         info: "Phd in Information science and head of Informatics dept.",
         Rank: "1",
@@ -78,21 +78,27 @@ function featuredFunction() {
     const { info} = item;
     if (Ranking <= 2) {
       featureCard += `<div class="course_lecturers">
-      <img src="images/checkers.png" alt="checkers" class="checkers"/>
-      <img src="${image}" alt="" class="lecturer_icon"/>
+      <div class="featured-image">
+        <img src="images/checkers.png" alt="checkers" class="checkers"/>
+        <img src="${image}" alt="" class="lecturer_icon"/>
+      </div>
       <div class="lecturer_content">
           <h2 class="lecturer_name">${lecturerList}</h2>
           <p class="lecturer_title">${title}</p>
+          <hr id="underline" />
           <small>${info}</small>
       </div>
     </div>`;
     } else {
-      featureCard += `<div class="course_lecturers hide">
-      <img src="images/checkers.png" alt="checkers" class="checkers"/>
-      <img src="${image}" alt="" class="lecturer_icon"/>
+        featureCard += `<div class="course_lecturers hide">
+      <div class="featured-image">
+        <img src="images/checkers.png" alt="checkers" class="checkers"/>
+        <img src="${image}" alt="" class="lecturer_icon"/>
+      </div>
       <div class="lecturer_content">
           <h2 class="lecturer_name">${lecturerList}</h2>
           <p class="lecturer_title">${title}</p>
+          <hr id="underline" />
           <small>${info}</small>
       </div>
     </div>`;
