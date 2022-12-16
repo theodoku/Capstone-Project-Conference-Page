@@ -1,16 +1,4 @@
 const nav = document.getElementById('nav');
-// const moreInfo = document.getElementById('more_info');
-// const hide = document.querySelector('.hide');
-
-// function revealContent() {
-//   if (hide.classList.contains('more_info')) {
-//     hide.classList.remove('more_info')
-//   } else {
-//     hide.classList.add('hide')
-//   }
-// }
-
-// moreInfo.addEventListener('click', revealContent);
 
 function openMobileMenu() {
 nav.style.display = 'block';
@@ -106,5 +94,5 @@ function featuredFunction() {
   });
   document.getElementById('lecturer-list').innerHTML = featureCard;
 }
+
 featuredFunction();
-  
